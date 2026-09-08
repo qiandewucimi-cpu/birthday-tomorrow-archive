@@ -90,7 +90,7 @@ export default function App() {
         <div className="scene" />
         <div className="grain" />
         <section className="gate__card">
-          <small>PRIVATE MEMORY SPACE · {__PRODUCT_MODE__ === "demo" ? "FICTIONAL DEMO" : currentInstance.occasionLabel}</small>
+          <small>STORY PAGES · {__PRODUCT_MODE__ === "demo" ? "FICTIONAL DEMO" : currentInstance.occasionLabel}</small>
           <div className="seal">记</div>
           <h1>有一段故事<br />正在等你打开</h1>
           <form onSubmit={unlock}>
@@ -113,7 +113,7 @@ export default function App() {
         <section className="cover__content">
           <p>{currentInstance.opening.eyebrow}</p>
           <h1><span>{currentInstance.opening.titleLines[0]}</span><span>{currentInstance.opening.titleLines[1]}</span></h1>
-          <div className="cover__line"><i /> MEMORY EDITION · 01—{chapterCount}</div>
+          <div className="cover__line"><i /> STORY EDITION · 01—{chapterCount}</div>
           <p className="cover__invitation">{currentInstance.opening.invitation}</p>
           <button onClick={() => setEntered(true)}>开始这段故事 <span>→</span></button>
           <small>{currentInstance.sender.displayName}，写给{currentInstance.recipient.displayName}</small>

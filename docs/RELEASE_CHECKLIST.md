@@ -2,10 +2,9 @@
 
 ## 1. 范围与授权
 
-- [ ] 明确本次是虚构 demo、内部 studio 还是 recipient 交付。
-- [ ] GitHub 仓库保持 private，除非完成公开源码和素材授权评审。
+- [ ] 明确本次是虚构 demo、studio 还是 recipient 交付。
 - [ ] 所有人物、文本、媒体、音乐和字体均有可记录的使用授权。
-- [ ] 没有把真实客户内容放进 Issue、PR、提交历史、CI 日志或 Actions artifact。
+- [ ] 没有把真实故事内容放进 Issue、PR、提交历史、CI 日志或 Actions artifact。
 - [ ] 没有把静态口令描述成登录、加密或安全访问控制。
 
 ## 2. 工作树与质量门禁
@@ -41,4 +40,4 @@
 - [ ] 版本号、Git tag 和 GitHub Release 与实际交付一致。
 - [ ] 确认交付物后预览 `git clean -ndX -- dist` 的结果。
 - [ ] 清理 `dist/`、浏览器草稿和不再需要的临时托管制品；确认构建器已移除 `src/generated/`。
-- [ ] 再次确认原始保留项目和永久备份没有被修改。
+- [ ] 再次确认仓库外部的故事源文件没有被意外修改。

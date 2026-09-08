@@ -4,8 +4,7 @@
 
 仓库上传、静态演示部署和真实收件人交付是三件不同的事：
 
-- GitHub 源码仓库默认应保持 private。
-- 公开静态站点只能使用仓库内的虚构 demo。
+- 公开静态站点使用仓库内的虚构 demo。
 - 真实收件人站点必须额外实现服务端认证、授权、撤销和审计；前端静态口令不能承担这些职责。
 
 项目当前没有一键部署或一键 ZIP 流程。
@@ -30,8 +29,8 @@ pnpm build
 `recipient` 模式要求实例 JSON 和素材根目录都位于仓库外部：
 
 ```powershell
-$env:MEMORY_INSTANCE_FILE = "D:\private-memory\project.json"
-$env:MEMORY_INSTANCE_ASSETS = "D:\private-memory\public"
+$env:MEMORY_INSTANCE_FILE = "D:\my-story\project.json"
+$env:MEMORY_INSTANCE_ASSETS = "D:\my-story\public"
 $env:MEMORY_PRODUCT_MODE = "recipient"
 pnpm build
 ```

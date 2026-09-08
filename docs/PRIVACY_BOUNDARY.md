@@ -10,9 +10,9 @@
 ## Data that must never enter the repository
 
 - real names, relationship details, dates, addresses, routes, statistics, private answers, letters, or chat exports;
-- customer photos, video, voice recordings, music, fonts, or source documents;
+- personal photos, video, voice recordings, music, fonts, or source documents;
 - access secrets, unpublished or published private URLs, authentication cookies, and service credentials;
-- screenshots or logs that reveal customer data, account notifications, or local user paths.
+- screenshots or logs that reveal personal data, account notifications, or local user paths.
 
 These restrictions apply to commits, branches, tags, Issue and PR bodies, review comments, CI logs, caches, Actions artifacts, Releases, Wikis, and copied example data—not only to the current working tree.
 

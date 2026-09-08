@@ -54,7 +54,7 @@ function StudioPreview({ instance, page, chapterIndex, onPage, onChapter }: {
   const chapter = instance.chapters[chapterIndex] ?? instance.chapters[0];
   return (
     <div className="studio-device">
-      <div className="studio-device__bar"><i /><span>私人记忆空间 · 预览</span><b>{instance.chapters.length}章</b></div>
+      <div className="studio-device__bar"><i /><span>故事页 · 预览</span><b>{instance.chapters.length}章</b></div>
       <div className="studio-device__screen">
         {page === "cover" && (
           <section className="preview-cover has-preview-image" style={previewSceneStyle(instance.opening.image)}>
@@ -112,7 +112,7 @@ export default function StudioApp() {
   const issues = useMemo(() => validateProductInstance(draft), [draft]);
 
   useEffect(() => {
-    document.title = "私人记忆空间 · 内部制作台";
+    document.title = "故事页 · 制作台";
     if (!persistenceEnabled) return;
     const persist = () => {
       try {
@@ -276,7 +276,7 @@ export default function StudioApp() {
   return (
     <main className="studio-shell">
       <header className="studio-topbar">
-        <a className="studio-brand" href={import.meta.env.BASE_URL} aria-label="返回成品演示"><span>记</span><div><small>PRIVATE MEMORY SPACE</small><strong>内部制作台</strong></div></a>
+        <a className="studio-brand" href={import.meta.env.BASE_URL} aria-label="返回成品演示"><span>记</span><div><small>STORY PAGES</small><strong>制作台</strong></div></a>
         <div className="studio-privacy"><i />本机明文草稿 · 未上传服务器 · 再次打开时清除超过 30 天的草稿</div>
         <div className="studio-actions">
           <input ref={importInput} className="studio-file-input" type="file" accept="application/json,.json" onChange={importJson} aria-label="选择项目 JSON 文件" />
@@ -354,7 +354,7 @@ export default function StudioApp() {
         <aside className="studio-preview-panel">
           <div className="studio-preview-panel__heading"><div><small>LIVE PREVIEW</small><strong>即时成品预览</strong></div><button onClick={openPreview}>全屏查看</button></div>
           <StudioPreview instance={draft} page={previewPage} chapterIndex={activeChapter} onPage={setPreviewPage} onChapter={(index) => { setActiveChapter(index); setPreviewPage("chapter"); }} />
-          <p>预览会随内容立即更新。图片应放入当前实例的专属资产目录，禁止把客户素材堆进仓库根 public。</p>
+          <p>预览会随内容立即更新。图片应放入当前实例的专属资产目录，禁止把真实素材堆进仓库根 public。</p>
         </aside>
       </div>
 

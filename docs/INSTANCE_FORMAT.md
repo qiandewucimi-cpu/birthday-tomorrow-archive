@@ -20,18 +20,18 @@ Image values must be root-relative local paths such as `/demo-afterglow/cover.we
 ## Product modes
 
 - `demo` is the default for built-in fictional instances and includes the product link to `/studio`.
-- `studio` is reserved for internal authoring and preview.
+- `studio` is for local authoring and preview.
 - `recipient` is required for an external instance and does not provide the studio interface.
 
 Recipient mode is a packaging boundary, not authentication. The passphrase is present in browser code and can be recovered by anyone who receives the static files.
 
 ## External instance and media
 
-A real project must keep both its JSON and every related asset outside this repository:
+Your own story must keep both its JSON and every related asset outside this repository:
 
 ```powershell
-$env:MEMORY_INSTANCE_FILE = "D:\private-memory\project.json"
-$env:MEMORY_INSTANCE_ASSETS = "D:\private-memory\public"
+$env:MEMORY_INSTANCE_FILE = "D:\my-story\project.json"
+$env:MEMORY_INSTANCE_ASSETS = "D:\my-story\public"
 $env:MEMORY_PRODUCT_MODE = "recipient"
 pnpm build
 ```

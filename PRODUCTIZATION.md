@@ -1,33 +1,30 @@
-# Productization workspace
+# 仓库组织与实例规范
 
-This repository is an isolated, private-first product workspace. It contains no source material from the preserved personal site.
+本仓库只承载可复用的引擎、类型、校验、测试与构建代码，以及完全虚构的演示实例。任何真实故事内容都通过外部 JSON 与外部素材目录构建，不进入仓库。
 
-## Protection rules
+## 组织规则
 
-- All reusable engine, schema, instance, and example work happens in this repository.
-- Personal originals and backups remain outside this repository and are never addressed by product scripts.
-- Only fictional demonstrations may be stored under `instances/`.
-- Real project JSON and all related media must stay outside the repository.
-- External JSON is selected temporarily with `MEMORY_INSTANCE_FILE`; image-bearing instances also require an external `MEMORY_INSTANCE_ASSETS` directory.
-- External projects may only build with `MEMORY_PRODUCT_MODE=recipient`.
-- Recipient mode removes the authoring surface, but its static passphrase is not authentication.
-- No change is copied into any preserved personal project automatically. Any future backport requires an explicit review and user confirmation.
+- 可复用的引擎、schema、实例校验与演示代码都在本仓库内。
+- 只有完全虚构的演示可以放在 `instances/` 下。
+- 真实故事的内容与素材必须位于仓库之外，由 `MEMORY_INSTANCE_FILE`（JSON）与可选的 `MEMORY_INSTANCE_ASSETS`（图片目录）临时指定。
+- 带图片的外部实例需要同时提供外部素材目录。
+- 外部实例只能以 `MEMORY_PRODUCT_MODE=recipient` 构建。
+- recipient 模式不提供制作台入口；页面口令只是仪式交互，不是身份认证。
 
-## Completion gate
+## 完成标准
 
-- Instances with different people and chapter counts build without editing reusable React components.
-- Each built-in demo copies only its own declared asset directory.
-- Distribution checks prove that no foreign instance marker or asset directory is present.
-- Temporary generated source is removed automatically; a private `dist/` is cleaned after delivery.
+- 不同人物与章节数量的实例，无需修改可复用的 React 组件即可构建。
+- 每个内置演示只复制自己声明的素材目录。
+- 成品隔离检查能证明产物中不存在其他实例的标记或素材目录。
+- 临时生成源码自动清理，交付后清理 `dist/`。
 
-## Current commands
+## 常用命令
 
-- `pnpm validate:instances` validates every built-in fictional demonstration.
-- `pnpm test` runs schema and isolation tests.
-- `pnpm privacy:check` scans unignored working files, media metadata, and all reachable Git history.
-- `pnpm build` builds the default `demo-afterglow` instance.
-- Set `MEMORY_INSTANCE=demo-starlight` or `MEMORY_INSTANCE=demo-lantern` to build another fictional demonstration.
-- `pnpm build` runs distribution isolation checks before it succeeds.
-- For an external private build, point `MEMORY_INSTANCE_FILE` and, when images are declared, `MEMORY_INSTANCE_ASSETS` to paths outside the repository and set `MEMORY_PRODUCT_MODE=recipient`.
+- `pnpm validate:instances` 校验所有内置虚构演示。
+- `pnpm test` 运行 schema 与隔离测试。
+- `pnpm privacy:check` 扫描未忽略工作文件、媒体元数据与全部可达 Git 历史。
+- `pnpm build` 构建默认的 `demo-afterglow`。
+- 设置 `MEMORY_INSTANCE=demo-starlight` 或 `MEMORY_INSTANCE=demo-lantern` 构建另一套虚构演示。
+- 外部构建：指定 `MEMORY_INSTANCE_FILE`，若声明了图片还需 `MEMORY_INSTANCE_ASSETS`，并设置 `MEMORY_PRODUCT_MODE=recipient`。
 
-See `README.md`, `docs/INSTANCE_FORMAT.md`, `docs/PRIVACY_BOUNDARY.md`, and `docs/RELEASE_CHECKLIST.md` before adding or delivering an instance.
+新增或交付实例前，请先阅读 `README.md`、`docs/INSTANCE_FORMAT.md`、`docs/PRIVACY_BOUNDARY.md` 和 `docs/RELEASE_CHECKLIST.md`。

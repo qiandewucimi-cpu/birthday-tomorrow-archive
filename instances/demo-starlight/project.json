@@ -2,7 +2,7 @@
   "id": "demo-starlight",
   "version": 1,
   "title": "沿着星光，再见一遍",
-  "description": "一份使用虚构内容演示的私人记忆空间。",
+  "description": "一份使用虚构内容演示的叙事故事空间。",
   "recipient": { "displayName": "小满" },
   "sender": { "displayName": "南川" },
   "occasionLabel": "相识纪念日",
@@ -28,6 +28,6 @@
   "finale": {
     "eyebrow": "ALL MEMORIES FOUND",
     "heading": "下一页，还没有写完。",
-    "body": "这是完全虚构的产品演示，不包含任何真实客户或原项目的私人信息。"
+    "body": "这是完全虚构的产品演示，不包含任何真实个人信息。"
   }
 }

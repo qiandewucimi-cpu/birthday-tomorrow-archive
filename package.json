@@ -1,9 +1,9 @@
 {
-  "name": "private-memory-space",
+  "name": "story-pages",
   "private": true,
   "version": "0.1.0",
-  "description": "A privacy-aware, instance-driven memorial story experience and local authoring studio.",
-  "license": "UNLICENSED",
+  "description": "An instance-driven, chaptered storytelling page generator with a local authoring studio.",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/qiandewucimi-cpu/birthday-tomorrow-archive.git"

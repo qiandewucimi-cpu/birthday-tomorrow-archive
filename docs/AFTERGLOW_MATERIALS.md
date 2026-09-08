@@ -1,6 +1,6 @@
 # Afterglow fictional material set
 
-`demo-afterglow` is a fully fictional inspiration sample. It contains no names, dates, locations, photos, or story details from the preserved personal project.
+`demo-afterglow` is a fully fictional sample. All names, dates, locations, photos, and story details are invented.
 
 ## Narrative direction
 
@@ -19,4 +19,4 @@ The seven story images and one dedicated social card were generated with the bui
 - `instances/demo-afterglow/public/demo-afterglow/chapter-06.webp`: curtains, bedside letter, and daybreak
 - `instances/demo-afterglow/public/demo-afterglow/social-card.webp`: 1200×630 morning-letter share card with the fictional demo title and privacy-safe subtitle
 
-The generated originals remain outside the repository in the Codex generated-image store. The project copies are the product-consumed deliverables.
+The generated originals are kept outside this repository; only the product-consumed deliverables are committed here.
