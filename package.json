@@ -6,12 +6,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/qiandewucimi-cpu/birthday-tomorrow-archive.git"
+    "url": "git+https://github.com/qiandewucimi-cpu/story-pages.git"
   },
   "bugs": {
-    "url": "https://github.com/qiandewucimi-cpu/birthday-tomorrow-archive/issues"
+    "url": "https://github.com/qiandewucimi-cpu/story-pages/issues"
   },
-  "homepage": "https://github.com/qiandewucimi-cpu/birthday-tomorrow-archive#readme",
+  "homepage": "https://github.com/qiandewucimi-cpu/story-pages#readme",
   "packageManager": "pnpm@11.19.0",
   "engines": {
     "node": "^20.19.0 || >=22.12.0",
