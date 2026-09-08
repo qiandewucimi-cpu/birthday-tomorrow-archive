@@ -1,0 +1,31 @@
+{
+  "id": "demo-lantern",
+  "version": 1,
+  "title": "把晚风装进灯里",
+  "description": "另一份完全虚构的四章节纪念空间演示。",
+  "recipient": { "displayName": "阿遥" },
+  "sender": { "displayName": "迟木" },
+  "occasionLabel": "生日纪念",
+  "storageNamespace": "demo-lantern",
+  "access": {
+    "passphrase": "晚风",
+    "prompt": "输入演示答案：晚风",
+    "placeholder": "答案是“晚风”"
+  },
+  "opening": {
+    "eyebrow": "一份生日纪念礼物",
+    "titleLines": ["把晚风", "装进灯里"],
+    "invitation": "四段虚构故事，用来验证章节数量和人物都可以自由变化。"
+  },
+  "chapters": [
+    { "number": 1, "eyebrow": "夏夜", "title": "河堤上的第一阵风", "body": "路灯刚亮，我们沿着河堤慢慢往前走。那时还没有约定，只觉得这条路可以再长一些。", "accent": "青灰" },
+    { "number": 2, "eyebrow": "留声", "title": "没有寄出的明信片", "body": "明信片背面写满了沿途的小事，最后没有寄走，因为想说的话已经在见面时说完。", "accent": "海盐" },
+    { "number": 3, "eyebrow": "归途", "title": "末班车以前", "body": "我们踩着时间赶上末班车，也把最普通的一天留成了以后反复提起的故事。", "accent": "橘灯" },
+    { "number": 4, "eyebrow": "生日", "title": "灯亮起来的时候", "body": "没有盛大的舞台，只有一盏小灯和认真准备的话。被记住的时刻，因此刚刚好。", "accent": "暖白" }
+  ],
+  "finale": {
+    "eyebrow": "FOUR LIGHTS ON",
+    "heading": "愿每一阵晚风，都有人回应。",
+    "body": "这是第二套虚构实例，用于验证产品引擎不会依赖固定的六章结构。"
+  }
+}
