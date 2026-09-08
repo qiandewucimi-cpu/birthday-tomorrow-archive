@@ -1,0 +1,78 @@
+{
+  "id": "demo-afterglow",
+  "version": 1,
+  "title": "把没说完的话，寄给清晨",
+  "description": "一封从雨夜写到清晨的虚构纪念长信。",
+  "socialImage": "/demo-afterglow/social-card.webp",
+  "recipient": { "displayName": "望舒" },
+  "sender": { "displayName": "迟舟" },
+  "occasionLabel": "相识七周年",
+  "storageNamespace": "demo-afterglow",
+  "access": {
+    "passphrase": "清晨",
+    "prompt": "这封信要寄往什么时候？",
+    "placeholder": "提示：雨停以后"
+  },
+  "opening": {
+    "eyebrow": "一封没有寄出的夜行信",
+    "titleLines": ["把没说完的话", "寄给清晨"],
+    "invitation": "从一场雨开始，沿着六件小事，把那些没有郑重说过的话重新读一遍。",
+    "image": "/demo-afterglow/cover.webp"
+  },
+  "chapters": [
+    {
+      "number": 1,
+      "eyebrow": "雨停之前",
+      "title": "窗边只剩两个位置",
+      "body": "那天的雨把陌生人都留得久了一点。我们隔着两杯渐渐冷掉的茶，从天气聊到各自不愿承认的胆怯。后来我才明白，重要的相遇很少敲锣打鼓，它只是替你拉开一把椅子。",
+      "accent": "琥珀",
+      "image": "/demo-afterglow/chapter-01.webp"
+    },
+    {
+      "number": 2,
+      "eyebrow": "末班以后",
+      "title": "我们故意多坐了一站",
+      "body": "车厢已经空了，街灯一盏盏从玻璃上退后。明明都看见了该下车的站牌，却谁也没有起身。那一站绕远的路，后来成了我们最早共同拥有的秘密。",
+      "accent": "雾蓝",
+      "image": "/demo-afterglow/chapter-02.webp"
+    },
+    {
+      "number": 3,
+      "eyebrow": "寻常夜晚",
+      "title": "厨房为晚归的人亮着",
+      "body": "没有烛光，也没有精心准备。一个人切菜，一个人找不到碗，盐放多了一点，汤却喝得很慢。原来所谓归属感，是知道城市再晚，总有一盏灯不催你解释。",
+      "accent": "暖金",
+      "image": "/demo-afterglow/chapter-03.webp"
+    },
+    {
+      "number": 4,
+      "eyebrow": "第一次远行",
+      "title": "车票夹在没有读完的书里",
+      "body": "我们带了太多行李，也错过了计划里的日落。可在回程车窗的倒影里，我第一次清楚地看见：目的地从来不是答案，并肩出发才是。",
+      "accent": "砖红",
+      "image": "/demo-afterglow/chapter-04.webp"
+    },
+    {
+      "number": 5,
+      "eyebrow": "写给明年",
+      "title": "愿望小得刚好能实现",
+      "body": "换一盏不刺眼的灯，养活窗边那盆植物，周末去一条没走过的街。我们没有许宏大的愿，只认真约定了这些微不足道的明天。生活因此第一次有了复数。",
+      "accent": "鼠尾草",
+      "image": "/demo-afterglow/chapter-05.webp"
+    },
+    {
+      "number": 6,
+      "eyebrow": "天快亮了",
+      "title": "信写完，故事没有",
+      "body": "窗帘开始有了清晨的颜色，远处最后一盏夜灯熄灭。我终于把这些话写完，却不再急着寄出——因为每个普通日子里，我们都还在亲手写下一页。",
+      "accent": "晨蓝",
+      "image": "/demo-afterglow/chapter-06.webp"
+    }
+  ],
+  "finale": {
+    "eyebrow": "LETTER DELIVERED",
+    "heading": "愿我们仍有许多话，留到明天慢慢说。",
+    "body": "以上人物、地点与故事均为虚构，仅用于展示产品能够承载的完整情绪与叙事效果。",
+    "image": "/demo-afterglow/chapter-06.webp"
+  }
+}

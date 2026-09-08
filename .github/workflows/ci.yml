@@ -1,0 +1,63 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  demo-isolation:
+    name: ${{ matrix.instance }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    strategy:
+      fail-fast: false
+      matrix:
+        instance:
+          - demo-afterglow
+          - demo-starlight
+          - demo-lantern
+    env:
+      CI: true
+      MEMORY_INSTANCE: ${{ matrix.instance }}
+      MEMORY_PRODUCT_MODE: demo
+      MEMORY_BASE_PATH: /preview/
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 11.19.0
+          run_install: false
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Validate built-in instances
+        run: pnpm validate:instances
+
+      - name: Run tests
+        run: pnpm test
+
+      - name: Scan working tree, media metadata, and reachable history
+        run: pnpm privacy:check
+
+      - name: Build selected demo
+        run: pnpm build

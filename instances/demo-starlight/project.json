@@ -1,0 +1,33 @@
+{
+  "id": "demo-starlight",
+  "version": 1,
+  "title": "沿着星光，再见一遍",
+  "description": "一份使用虚构内容演示的私人记忆空间。",
+  "recipient": { "displayName": "小满" },
+  "sender": { "displayName": "南川" },
+  "occasionLabel": "相识纪念日",
+  "storageNamespace": "demo-starlight",
+  "access": {
+    "passphrase": "星光",
+    "prompt": "输入演示答案：星光",
+    "placeholder": "答案是“星光”"
+  },
+  "opening": {
+    "eyebrow": "一份相识纪念日礼物",
+    "titleLines": ["沿着星光", "再见一遍"],
+    "invitation": "六段虚构记忆，演示同一套引擎如何承载不同故事。"
+  },
+  "chapters": [
+    { "number": 1, "eyebrow": "初见", "title": "窗边空着的座位", "body": "雨停以前，我们只是偶然坐在同一扇窗边的两个人。后来回想，故事大概就是从那杯渐渐凉下来的茶开始。", "accent": "琥珀" },
+    { "number": 2, "eyebrow": "同行", "title": "绕远的那一站", "body": "为了把一段话说完，我们故意多坐了一站。城市在窗外后退，而那一晚第一次显得没有那么匆忙。", "accent": "雾蓝" },
+    { "number": 3, "eyebrow": "日常", "title": "厨房亮着一盏灯", "body": "真正被记住的不是哪一道菜，而是有人洗菜、有人找碗，普通的夜晚因此有了可以回去的形状。", "accent": "鼠尾草" },
+    { "number": 4, "eyebrow": "远行", "title": "地图上的第一枚标记", "body": "我们把车票夹进书里，把没有走完的路留到下一次。目的地只是借口，并肩出发才是答案。", "accent": "砖红" },
+    { "number": 5, "eyebrow": "约定", "title": "写给明年的便签", "body": "便签上的字有一点歪，却认真写着下一年还要一起完成的小事。它们不宏大，所以更像生活。", "accent": "暖金" },
+    { "number": 6, "eyebrow": "此刻", "title": "星光落进房间", "body": "走到这里，六段记忆都亮了起来。网页会结束，但被认真保存过的时间仍会继续生长。", "accent": "夜紫" }
+  ],
+  "finale": {
+    "eyebrow": "ALL MEMORIES FOUND",
+    "heading": "下一页，还没有写完。",
+    "body": "这是完全虚构的产品演示，不包含任何真实客户或原项目的私人信息。"
+  }
+}

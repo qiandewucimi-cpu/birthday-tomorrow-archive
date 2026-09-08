@@ -1,0 +1,31 @@
+# Rebuildable output and local dependencies
+dist/
+node_modules/
+
+# Local media-conversion helpers and temporary working copies
+_media-runtime/
+_media-tools/
+_source-backup/
+.private-instances/
+customer-media/
+private-projects/
+src/generated/
+
+# Local environment, credentials, certificates, and private exports
+.env*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+*.private.project.json
+
+# Local server logs and TypeScript build caches
+*.log
+*.tsbuildinfo
+.wrangler/
+
+# System files
+.DS_Store
+Thumbs.db
