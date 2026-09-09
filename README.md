@@ -59,6 +59,12 @@ pnpm dev
 | `demo-starlight` | 6 | 六章节结构替换验证 |
 | `demo-lantern` | 4 | 非固定章节数量验证 |
 
+三套演示的封面页由同一套引擎渲染，只更换实例 JSON 与素材：
+
+| demo-afterglow | demo-starlight | demo-lantern |
+| :---: | :---: | :---: |
+| <img src="docs/previews/afterglow-cover.jpg" alt="demo-afterglow 封面" width="250"> | <img src="docs/previews/starlight-cover.jpg" alt="demo-starlight 封面" width="250"> | <img src="docs/previews/lantern-cover.jpg" alt="demo-lantern 封面" width="250"> |
+
 PowerShell 中构建另一套演示：
 
 ```powershell
