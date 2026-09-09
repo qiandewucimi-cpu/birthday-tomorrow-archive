@@ -70,7 +70,9 @@ pnpm build
 
 假设外部 `project.json` 使用图片路径 `/story/cover.webp`，外部素材根目录必须包含对应的 `story/cover.webp`。素材根目录中的每个文件都必须在实例 JSON 中声明，不能包含额外文件或符号链接。构建脚本会拒绝位于仓库内部的外部实例或素材目录，并在构建内自动执行成品隔离检查。
 
-临时生成的 `src/generated/` 会在成功或失败后自动删除；`dist/` 是构建产物。确认已保存所需交付物后，先预览再清理：
+临时生成的 `src/generated/` 会在成功或失败后自动删除；`dist/` 是构建产物。
+
+> 注意：`pnpm dev` 与 `pnpm build` 共用同一个 `src/generated/`，且命令结束后都会清理它。**不要在 dev 服务器运行期间执行 `pnpm build`**，否则构建结束时会删掉 dev 正在使用的实例文件，导致页面白屏。需要构建时请先停掉 dev（或另开一个工作副本）。确认已保存所需交付物后，先预览再清理：
 
 ```powershell
 git clean -ndX -- dist
